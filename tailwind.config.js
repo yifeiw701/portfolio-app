@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -18,6 +19,7 @@ module.exports = {
         slideUp: "slideUp 0.5s",
         slideUpEaseInOut: "slideUp 0.5s ease-in-out",
         slideUpCubiBezier: "slideUp 1s cubic-bezier(0.165, 0.84, 0.44, 1)",
+        rotate: "rotate 1s",
       },
       animationDelay: {
         0: "0s",
@@ -37,6 +39,12 @@ module.exports = {
         bounce: {
           from: { transform: "translateY(10px)" },
           to: { transform: "translateY(0)" },
+        },
+        rotate: {
+          "50%": {
+            transform: "rotateY(180deg)",
+            color: "#c69c6d",
+          },
         },
       },
     },
