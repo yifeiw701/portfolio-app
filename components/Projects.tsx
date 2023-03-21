@@ -18,7 +18,7 @@ const projects = [
       "Yep, I built this fully responsive personal portfolio with an emphasis on UX design.",
     image: "/portfolio.png",
     github: "https://github.com/yifeiw701/portfolio-app",
-    link: "https://quote-generator-chi-amber.vercel.app/",
+    link: "https://yifei-portfolio.vercel.app/",
   },
   {
     name: "Recipe App",

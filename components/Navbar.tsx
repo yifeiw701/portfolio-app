@@ -111,15 +111,12 @@ const Navbar = () => {
                       borderRadius: "10px",
                       transition: { duration: 0.2, ease: "easeInOut" },
                       backgroundColor: "#feb47b",
-                      color: "#fff",
-                      textShadow: "1px 1px 2px rgba(0, 0, 0, 0.25)",
                     }}
                     whileTap={{ scale: 0.95 }}
                     onClick={() => setNavbar(!navbar)}
                   >
                     <Link
                       to={item.page}
-                      className="hover:text-neutral-100"
                       activeClass="active"
                       spy={true}
                       smooth={true}

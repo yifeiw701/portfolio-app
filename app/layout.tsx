@@ -15,6 +15,7 @@ export default function RootLayout({
       <body className="bg-gray-50 dark:bg-gray-900">
         <ThemeProvider attribute="class">
           <Navbar />
+          <div />
           {children}
           <Footer />
         </ThemeProvider>

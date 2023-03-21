@@ -16,7 +16,7 @@ const TitleLetter = (props: { name: string; index: number }) => {
     <motion.li
       key={name}
       className={`cursor-pointer ${animating ? "animate-rotate" : ""} mr-3`}
-      initial={{ rotateY: 0, color: "#777" }}
+      initial={{ rotateY: 0, color: "#999999" }}
       onMouseEnter={() => setAnimating(true)}
       onAnimationEnd={() => setAnimating(false)}
       style={{ fontSize: "7vw", animationFillMode: "forwards" }}
@@ -29,9 +29,9 @@ const TitleLetter = (props: { name: string; index: number }) => {
 const Hero = () => {
   return (
     <section id="home">
-      <div className="flex flex-col-reverse relative md:flex-row text-center items-center justify-center animate-fadeIn my-10 py-16 sm:py-32 md:py-48 md:px-8 md:space-x-8 md:text-left lg:px-2">
+      <div className="flex flex-col-reverse relative md:flex-row text-center items-center justify-center animate-fadeIn my-10 py-16 sm:py-32 md:py-48 md:px-8 md:space-x-4 lg:space-x-4 md:text-left">
         <hr className="w-2 h-16 mr-4 lg:mr-10 my-auto bg-orange-300 border-0 rounded invisible md:visible"></hr>
-        <div className="md:mt-2 md:w-3/5">
+        <div className="md:mt-2 ">
           <div className="text-4xl mt-6 md:mt-0 md:text-6xl">
             <motion.ul
               className="flex justify-center items-center"
@@ -50,7 +50,7 @@ const Hero = () => {
         </div>
 
         <motion.div
-          className="md:mt-2 md:w-1/2 shadow-img animate-profile__animate"
+          className="md:mt-2  shadow-img animate-profile__animate"
           style={{ borderRadius: "50%", overflow: "hidden" }}
           animate={{
             borderRadius: [
