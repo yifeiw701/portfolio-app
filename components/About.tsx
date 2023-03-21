@@ -36,12 +36,12 @@ const About = () => {
             Get to know me!
           </h4>
           <p className="text-sm md:text-lg lg:text-lg text-justify text-neutral-900 dark:text-neutral-200">
-            Hey 👋🏼 My name is Yifei. I'm a third-year undergraduate student at
-            McGill University studying Computer Science and Statistics. I am
+            Hey 👋🏼 My name is Yifei. I&#39;m a third-year undergraduate student
+            at McGill University studying Computer Science and Statistics. I am
             passionate about full-stack development, Robotics and I am
             experienced in many programming languages. I am always seeking new
             experiences and love to keep myself engaged and learning new things.
-            When I'm not coding, I love street photography, exploring new
+            When I&#39;m not coding, I love street photography, exploring new
             places, and watching movies!
           </p>
         </div>
