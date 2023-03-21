@@ -6,7 +6,7 @@ import { HiArrowDown } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const nameLetters = ["Y", "I", "F", "E", "I", " ", "W", "A", "N", "G"];
+const nameLetters = ["Y", "I", "F", "E", "I", "&lsquo;", "W", "A", "N", "G"];
 
 const TitleLetter = (props: { name: string; index: number }) => {
   const { name, index } = props;
