@@ -8,6 +8,7 @@ const skills = [
   { skill: "JavaScript" },
   { skill: "TypeScript" },
   { skill: "React" },
+  { skill: "Node.js" },
   { skill: "HTML" },
   { skill: "CSS" },
   { skill: "SCSS" },
@@ -16,7 +17,6 @@ const skills = [
   { skill: "Jupyter Notebooks" },
   { skill: "C" },
   { skill: "Git" },
-  { skill: "GitHub" },
   { skill: "R" },
   { skill: "SQL" },
 ];
