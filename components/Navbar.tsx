@@ -38,8 +38,9 @@ const NAV_ITEMS: Array<NavItem> = [
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
-  const currentTheme = theme;
   const [navbar, setNavbar] = useState(false);
+
+  const currentTheme = theme;
 
   return (
     <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 bg-gray-50 dark:bg-gray-900">

@@ -3,19 +3,22 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const skills = [
-  { skill: "HTML" },
-  { skill: "CSS" },
-  { skill: "JavaScript" },
-  { skill: "TypeScript" },
-  { skill: "Python" },
-  { skill: "Java" },
-  { skill: "React" },
   { skill: "Next.js" },
   { skill: "Tailwind CSS" },
+  { skill: "JavaScript" },
+  { skill: "TypeScript" },
+  { skill: "React" },
+  { skill: "HTML" },
+  { skill: "CSS" },
+  { skill: "SCSS" },
+  { skill: "Java" },
+  { skill: "Python" },
+  { skill: "Jupyter Notebooks" },
+  { skill: "C" },
   { skill: "Git" },
   { skill: "GitHub" },
-  { skill: "Jupyter Notebooks" },
   { skill: "R" },
+  { skill: "SQL" },
 ];
 
 const Skills = () => {
