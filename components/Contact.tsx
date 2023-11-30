@@ -20,19 +20,19 @@ export default function ContactMe({}: Props) {
 
   return (
     <section id="contact">
-      <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-        <h3 className="absolute top-12 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <div className="flex flex-col relative text-center md:text-left max-w-7xl justify-evenly mx-auto items-center">
+        <h3 className="text-center uppercase tracking-[20px] text-gray-500 text-xl md:text-3xl mt-20 mb-8 sm:mb-16">
           Contact Me
         </h3>
-        <div className="flex flex-col space-y-10">
-          <div className="space-y-10 text-neutral-900 dark:text-neutral-200">
-            <div className="flex items-center space-x-5 justify-center">
+        <div className="flex flex-col px-4 sm:px-10 ">
+          <div className="text-neutral-900 dark:text-neutral-200">
+            <div className="flex items-center space-x-5 justify-center mb-6">
               <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
               <p className="text-lg md:text-2xl lg:text-2xl">
                 yifei.wang10@mail.mcgill.ca
               </p>
             </div>
-            <div className="flex items-center space-x-5 justify-center">
+            <div className="flex items-center space-x-5 justify-center mb-6">
               <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
               <p className="text-lg md:text-2xl lg:text-2xl">Montreal, QC</p>
             </div>
