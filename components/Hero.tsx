@@ -29,9 +29,9 @@ const TitleLetter = (props: { name: string; index: number }) => {
 const Hero = () => {
   return (
     <section id="home">
-      <div className="flex flex-col-reverse relative md:flex-row text-center items-center justify-center animate-fadeIn mt-10 py-16 sm:py-32 md:py-48 md:px-8 md:space-x-4 lg:space-x-4 md:text-left">
+      <div className="flex flex-col-reverse relative md:flex-row text-center items-center justify-center animate-fadeIn mt-12 py-16 sm:py-32 md:py-48 md:px-8 md:space-x-4 lg:space-x-4 md:text-left">
         <hr className="w-2 h-16 mr-4 lg:mr-10 my-auto bg-orange-300 border-0 rounded invisible md:visible"></hr>
-        <div className="md:mt-2 ">
+        <div className="mt-2">
           <div className="text-4xl mt-6 md:mt-0 md:text-6xl">
             <motion.ul
               className="flex justify-center items-center"
@@ -44,7 +44,7 @@ const Hero = () => {
               ))}
             </motion.ul>
           </div>
-          <h2 className="text-center italic font-serif text-xl md:text-1xl lg:text-2xl xl:text-4xl mt-6 text-gray-500 dark:text-gray-400">
+          <h2 className="text-center italic font-serif text-xl px-2 md:text-1xl lg:text-2xl xl:text-4xl mt-6 text-gray-500 dark:text-gray-400">
             Software developer | Photographer | Student
           </h2>
         </div>
