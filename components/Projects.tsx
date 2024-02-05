@@ -5,6 +5,14 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
+    name: "AskMyFile",
+    description:
+      "This is a user-friendly chatbot application, enabling efficient data analysis and information extraction from various file types, including CSV, PDF, and Word documents.",
+    image: "/AskMyFile.png",
+    github: "https://github.com/yifeiw701/AskMyFile",
+    link: "https://github.com/yifeiw701/AskMyFile",
+  },
+  {
     name: "Motivio",
     description:
       "Motivio is a Little Prince themed motivational quote generator which fetches data from Quotable API and allows users to copy their favourite quotes.",
