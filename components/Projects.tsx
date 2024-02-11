@@ -41,11 +41,11 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section id="projects">
-      <h1 className="mt-32 md:mt-64 mb-12 md:mb-16 text-center uppercase tracking-[20px] text-gray-500 text-2xl md:text-3xl lg:text-4xl">
+      <h1 className="mt-32 md:mt-64 mb-12 md:mb-16 text-center uppercase tracking-[20px] text-gray-600 dark:text-gray-300 text-2xl md:text-3xl lg:text-4xl">
         Projects
       </h1>
 
-      <div className="flex flex-col space-y-28">
+      <div className="flex flex-col space-y-28 mx-2 lg:mx-4">
         {projects.map((project, idx) => {
           return (
             <div key={idx}>

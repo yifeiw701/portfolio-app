@@ -7,7 +7,7 @@ import ContactMe from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className=" flex-grow mx-auto max-w-3xl px-5 sm:px-6 md:max-w-5xl lg:max-w-6xl ">
+    <main className=" flex-grow mx-auto max-w-3xl px-5 sm:px-6 md:max-w-5xl lg:max-w-7xl ">
       <Hero />
       <About />
       <Skills />

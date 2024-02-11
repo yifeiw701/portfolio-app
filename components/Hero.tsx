@@ -29,26 +29,9 @@ const TitleLetter = (props: { name: string; index: number }) => {
 const Hero = () => {
   return (
     <section id="home">
-      <div className="flex flex-col-reverse relative md:flex-row text-center items-center justify-center animate-fadeIn mt-12 py-16 sm:py-32 md:py-48 md:px-8 md:space-x-4 lg:space-x-4 md:text-left">
-        <hr className="w-2 h-16 mr-4 lg:mr-10 my-auto bg-orange-300 border-0 rounded invisible md:visible"></hr>
-        <div className="mt-2">
-          <div className="text-4xl mt-6 md:mt-0 md:text-6xl">
-            <motion.ul
-              className="flex justify-center items-center"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
-            >
-              {nameLetters.map((value, index) => (
-                <TitleLetter key={index} name={value} index={index} />
-              ))}
-            </motion.ul>
-          </div>
-          <h2 className="text-center italic font-serif text-xl px-2 md:text-1xl lg:text-2xl xl:text-4xl mt-6 text-gray-500 dark:text-gray-400">
-            Software developer | Photographer | Student
-          </h2>
-        </div>
-
+      <hr className="absolute w-[9px] lg:h-[45%] mt-16 ml-12 bg-[#ff9128] dark:bg-orange-300 border-0 invisible lg:visible"></hr>
+      <hr className="absolute w-[65%] h-[9px] mt-28 ml-2 bg-[#ff9128] dark:bg-orange-300 border-0 invisible lg:visible"></hr>
+      <div className="flex flex-col relative md:flex-row text-center items-center justify-center animate-fadeIn mt-12 py-16 sm:py-32 md:py-48 md:pl-10 md:space-x-4 lg:space-x-4 md:text-left">
         <motion.div
           className="md:mt-2  shadow-img animate-profile__animate"
           style={{ borderRadius: "50%", overflow: "hidden" }}
@@ -69,6 +52,24 @@ const Hero = () => {
         >
           <Image src="/headshot.png" alt="" width={325} height={325} />
         </motion.div>
+
+        <div className="mt-2">
+          <div className="text-4xl mt-6 md:mt-0 md:text-6xl">
+            <motion.ul
+              className="flex justify-center items-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              {nameLetters.map((value, index) => (
+                <TitleLetter key={index} name={value} index={index} />
+              ))}
+            </motion.ul>
+          </div>
+          <h2 className="text-center italic font-serif text-xl px-2 md:text-1xl lg:text-2xl xl:text-4xl mt-6 text-gray-500 dark:text-gray-400">
+            Software developer | Photographer | Student
+          </h2>
+        </div>
 
         <div className="ml-9.25rem">
           <div className="wheel animate-scroll" />
