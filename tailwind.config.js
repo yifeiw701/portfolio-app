@@ -53,13 +53,17 @@ module.exports = {
         },
       },
       backgroundImage: {
-        circularLight:
+        circularLightLg:
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,rgb(249 250 251) 5px,rgb(249 250 251) 100px)",
         circularLightSm:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, rgb(249, 250, 251) 3px, rgb(249, 250, 251) 50px)",
+        circularLight:
           "repeating-radial-gradient(rgba(0,0,0,0.4) 2px, rgb(249, 250, 251) 3px, rgb(249, 250, 251) 35px)",
-        circularDark:
+        circularDarkLg:
           "repeating-radial-gradient(rgba(255,255,255,0.4) 2px, rgb(17 24 39)5px, rgb(17 24 39)100px)",
         circularDarkSm:
+          "repeating-radial-gradient(rgba(255,255,255,0.4) 2px, rgb(17, 24, 39) 3px, rgb(17, 24, 39) 50px)",
+        circularDark:
           "repeating-radial-gradient(rgba(255,255,255,0.4) 2px, rgb(17, 24, 39) 3px, rgb(17, 24, 39) 35px)",
       },
     },

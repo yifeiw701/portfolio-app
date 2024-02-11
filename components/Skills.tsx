@@ -29,7 +29,8 @@ const Skills = () => {
         <h1 className="font-bold text-4xl sm:text-5xl lg:text-[86px] md:text-6xl w-full text-center text-gray-500 dark:text-neutral-200 mt-32 md:mt-64">
           Skills
         </h1>
-        <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLightSm dark:bg-circularDarkSm md:bg-circularLight dark:md:bg-circularDark">
+
+        <div className="w-full h-[65vh] md:h-[80vh] lg:h-[100vh] relative bg-circularLight dark:bg-circularDark flex items-center justify-center rounded-full sm:bg-circularLightSm sm:dark:bg-circularDarkSm md:bg-circularLightLg md:dark:bg-circularDarkLg">
           <motion.div
             className="flex items-center justify-center rounded-full font-semibold bg-[#feb47b] text-slate-800 dark:text-neutral-200 p-2 sm:p-4 md:p-8 shadow-dark cursor-pointer"
             whileHover={{ scale: 1.05 }}
