@@ -2,52 +2,50 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const skills = [
-  { skill: "Next.js" },
-  { skill: "TypeScript" },
-  { skill: "JavaScript" },
-  { skill: "Tailwind CSS" },
-  { skill: "React" },
-  { skill: "Node.js" },
-  { skill: "GraphQL" },
-  { skill: "HTML" },
-  { skill: "CSS" },
-  { skill: "SCSS" },
-  { skill: "Java" },
-  { skill: "Python" },
-  { skill: "Jupyter Notebooks" },
-  { skill: "Git" },
-  { skill: "R" },
-  { skill: "SQL" },
-];
+interface SkillProps {
+  name: string;
+  x: number | string;
+  y: number | string;
+}
+
+const Skill: React.FC<SkillProps> = ({ name, x, y }) => {
+  return (
+    <motion.div
+      className="flex items-center justify-center rounded-full font-semibold bg-transparent sm:bg-[#feb47b] text-black dark:text-white sm:p-2 md:py-3 md:px-6 shadow-dark cursor-pointer absolute"
+      whileHover={{ scale: 1.05 }}
+      initial={{ x: 0, y: 0 }}
+      whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
+      viewport={{ once: true }}
+    >
+      {name}
+    </motion.div>
+  );
+};
 
 const Skills = () => {
   return (
     <section id="skills">
-      <div className="mt-20 mb-12 pb-12 md:pt-16 md:pb-48">
-        <h1 className="text-center uppercase tracking-[20px] text-gray-500 text-xl md:text-3xl mb-15">
-          My Skills
-        </h1>
-        <h1 className="space-y-5 md:space-y-10 px-0 md:px-12 text-xl sm:text-2xl font-bold mb-6 mt-12 text-neutral-900 dark:text-neutral-200">
-          Some Tools & Technologies I&#39;ve Worked With
-        </h1>
-        <div className="grid grid-cols-3 gap-1 px-2 sm:grid-cols-4 sm:gap-4 sm:px-4 md:gap-5  md:px-10">
-          {skills.map((item, idx) => {
-            return (
-              <motion.div
-                key={idx}
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: "0px 0px 8px rgba(255, 255, 255, 0.6)",
-                }}
-              >
-                <p className="bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] px-2 py-2 text-xs sm:text-base sm:px-5 sm:py-3 mr-2 mt-2 text-white rounded font-semibold ">
-                  {item.skill}
-                </p>
-              </motion.div>
-            );
-          })}
-        </div>
+      <h1 className="font-bold text-4xl sm:text-6xl lg:text-[86px] md:text-6xl w-full text-center text-gray-500 dark:text-neutral-200 mt-32 md:mt-64">
+        Skills
+      </h1>
+      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLightSm dark:bg-circularDarkSm md:bg-circularLight dark:md:bg-circularDark">
+        <motion.div
+          className="flex items-center justify-center rounded-full font-semibold bg-[#feb47b] text-slate-800 dark:text-neutral-200 p-2 sm:p-4 md:p-8 shadow-dark cursor-pointer"
+          whileHover={{ scale: 1.05 }}
+        >
+          Web
+        </motion.div>
+        <Skill name="SQL" x="-20vw" y="2vw" />
+        <Skill name="React" x="-5vw" y="-10vw" />
+        <Skill name="Javascript" x="19vw" y="5vw" />
+        <Skill name="Typescript" x="0vw" y="12vw" />
+        <Skill name="CSS" x="-20vw" y="-14vw" />
+        <Skill name="NextJS" x="15vw" y="-12vw" />
+        <Skill name="NodeJS" x="32vw" y="-5vw" />
+        <Skill name="HTML" x="0vw" y="-19vw" />
+        <Skill name="Git" x="-25vw" y="16vw" />
+        <Skill name="Python" x="22vw" y="18vw" />
+        <Skill name="GraphQL" x="-34vw" y="-4vw" />
       </div>
     </section>
   );

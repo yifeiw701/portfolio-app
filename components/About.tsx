@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about">
       <div className="flex flex-col">
-        <h3 className="text-center my-8 uppercase tracking-[20px] text-gray-500 text-2xl md:text-3xl">
+        <h3 className="my-8 text-center uppercase tracking-[20px] text-gray-500 text-2xl md:text-3xl lg:text-4xl">
           About
         </h3>
         <motion.div

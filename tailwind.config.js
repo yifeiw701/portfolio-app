@@ -11,7 +11,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
+      screens: {
+        sm: "480px",
+        md: "768px",
+        lg: "976px",
+        xl: "1440pd",
+      },
       animation: {
         fadeIn: "fadeIn 1.5s",
         bounce:
@@ -46,6 +51,16 @@ module.exports = {
             color: "#c69c6d",
           },
         },
+      },
+      backgroundImage: {
+        circularLight:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,rgb(249 250 251) 5px,rgb(249 250 251) 100px)",
+        circularLightSm:
+          "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,rgb(249 250 251) 5px,rgb(249 250 251) 50px)",
+        circularDark:
+          "repeating-radial-gradient(rgba(255,255,255,0.4) 2px, rgb(17 24 39)5px, rgb(17 24 39)100px)",
+        circularDarkSm:
+          "repeating-radial-gradient(rgba(255,255,255,0.4) 2px, rgb(17 24 39)5px, rgb(17 24 39)50px)",
       },
     },
   },
