@@ -75,7 +75,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            <div className="md:hidden">
+            <div className="md:hidden ">
               <motion.button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                 whileHover={{
@@ -83,8 +83,6 @@ const Navbar = () => {
                   borderRadius: "50px",
                   transition: { duration: 0.2, ease: "easeInOut" },
                   backgroundImage: "linear-gradient(45deg, #ff7e5f, #feb47b)",
-                  boxShadow:
-                    "0px 3px 3px rgba(0, 0, 0, 0.25), 0px 0px 20px rgba(0, 0, 0, 0.2) inset",
                 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setNavbar(!navbar)}
@@ -106,7 +104,7 @@ const Navbar = () => {
                 return (
                   <motion.button
                     key={idx}
-                    className="block lg:inline-block p-2 text-neutral-900 dark:text-neutral-200 rounded-md outline-none focus:border-gray-400 focus:border"
+                    className="block lg:inline-block p-2 text-neutral-900 dark:text-neutral-200 rounded-md outline-none"
                     whileHover={{
                       scale: 1.05,
                       borderRadius: "10px",
@@ -114,7 +112,6 @@ const Navbar = () => {
                       backgroundColor: "#feb47b",
                     }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => setNavbar(!navbar)}
                   >
                     <Link
                       to={item.page}
