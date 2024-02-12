@@ -29,8 +29,8 @@ const TitleLetter = (props: { name: string; index: number }) => {
 const Hero = () => {
   return (
     <section id="home">
-      <hr className="absolute w-[9px] lg:h-[45%] mt-16 ml-12 bg-[#ff9128] dark:bg-orange-300 border-0 invisible lg:visible"></hr>
-      <hr className="absolute w-[65%] h-[9px] mt-28 ml-2 bg-[#ff9128] dark:bg-orange-300 border-0 invisible lg:visible"></hr>
+      <hr className="absolute w-[9px] lg:h-[45%] mt-16 ml-12 bg-[#d8a367] dark:bg-orange-300 border-0 invisible lg:visible"></hr>
+      <hr className="absolute w-[65%] h-[9px] mt-28 ml-2 bg-[#d8a367] dark:bg-orange-300 border-0 invisible lg:visible"></hr>
       <div className="flex flex-col relative md:flex-row text-center items-center justify-center animate-fadeIn mt-12 py-16 sm:py-32 md:py-48 md:pl-10 md:space-x-4 lg:space-x-4 md:text-left">
         <motion.div
           className="md:mt-2  shadow-img animate-profile__animate"

@@ -10,7 +10,7 @@ const projects = [
       "This is a user-friendly chatbot application, enabling efficient data analysis and information extraction from various file types, including CSV, PDF, and Word documents.",
     image: "/AskMyFile.png",
     github: "https://github.com/yifeiw701/AskMyFile",
-    link: "https://github.com/yifeiw701/AskMyFile",
+    link: "https://askmyfiles.streamlit.app/",
   },
   {
     name: "Motivio",
