@@ -11,7 +11,7 @@ interface SkillProps {
 const Skill: React.FC<SkillProps> = ({ name, x, y }) => {
   return (
     <motion.div
-      className="flex items-center justify-center rounded-full font-semibold bg-transparent sm:bg-[#feb47b] text-black dark:text-gray-300 sm:p-2 md:py-3 md:px-6 shadow-dark cursor-pointer absolute"
+      className="flex items-center justify-center rounded-full font-semibold bg-transparent sm:bg-[#feb47b] text-black dark:bg-opacity-90 dark:text-gray-300 sm:p-2 md:py-3 md:px-6 shadow-dark cursor-pointer absolute"
       whileHover={{ scale: 1.05 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
@@ -32,7 +32,7 @@ const Skills = () => {
 
         <div className="w-full h-[65vh] md:h-[80vh] lg:h-[100vh] relative bg-circularLight dark:bg-circularDark flex items-center justify-center rounded-full sm:bg-circularLightSm sm:dark:bg-circularDarkSm md:bg-circularLightLg md:dark:bg-circularDarkLg">
           <motion.div
-            className="flex items-center justify-center rounded-full font-semibold bg-[#feb47b] text-slate-800 dark:text-neutral-200 p-2 sm:p-4 md:p-8 shadow-dark cursor-pointer"
+            className="flex items-center justify-center rounded-full font-semibold bg-[#feb47b] text-slate-800 dark:bg-opacity-90 dark:text-neutral-200 p-2 sm:p-4 md:p-8 shadow-dark cursor-pointer"
             whileHover={{ scale: 1.05 }}
           >
             Web
