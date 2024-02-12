@@ -22,12 +22,13 @@ const About = () => {
             <p className="text-sm md:text-lg lg:text-lg text-justify text-neutral-900 dark:text-neutral-200">
               Hey 👋🏼 My name is Yifei. I&#39;m a final-year undergraduate
               student at McGill University studying Computer Science and
-              Statistics. I am passionate about full-stack web development, Data
-              Analysis, ML and I am experienced in Typescript, Java, Python, C
-              and many other programming languages. I am always seeking new
-              experiences and love to keep myself engaged and learning new
-              things. When I&#39;m not coding, I love street photography,
-              exploring new places, and watching movies!
+              Statistics. I am passionate about full-stack web development, data
+              analysis, machine learning, and I have experience in TypeScript,
+              JavaScript, Next.js, React, SQL, Node.js, Python, Java, among
+              others. I am always seeking new experiences and love to keep
+              myself engaged and learning new things. When I&#39;m not coding, I
+              love Pilates, street photography, exploring new places, and
+              watching movies!
             </p>
           </div>
           <motion.img
