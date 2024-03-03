@@ -13,7 +13,7 @@ export default function RootLayout({
     <html lang="en">
       <head />
       <body className="bg-gray-50 dark:bg-gray-900 scrollbar-thin scrollbar-thumb-orange-300">
-        <ThemeProvider attribute="class">
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <Navbar />
           <div />
           {children}
