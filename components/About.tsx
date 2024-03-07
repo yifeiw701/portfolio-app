@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -43,6 +43,7 @@ const About = () => {
               x: 0,
               opacity: 1,
             }}
+            whileHover={{ scale: 1.05 }}
             viewport={{ once: true }}
             className=" my-1 md:mb-0 flex-shrink-0 w-60 h-62 rounded-full object-cover md:rounded-lg md:w-72 md:h-95 xl:w-[500px] xl:h-[600px]"
             src="/aboutyf.png"
