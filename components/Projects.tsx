@@ -14,7 +14,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ name, description, github, link }) => {
   return (
-    <div className="bg-slate-300 dark:bg-slate-700 shadow-md shadow-[#F7AB0A] h-[210px] w-[310px] sm:h-[260px] sm:w-[460px] md:h-[340px] md:w-[600px] lgxl:h-[300px] lgxl:w-[510px] xl:h-[330px] xl:w-[560px] rounded-xl flex flex-col justify-center items-center px-4 pl-6 pr-3 relative">
+    <div className="bg-slate-300 dark:bg-slate-700 shadow-md shadow-[#F7AB0A] h-[210px] w-[320px] sm:h-[260px] sm:w-[460px] md:h-[340px] md:w-[600px] lgxl:h-[300px] lgxl:w-[510px] xl:h-[330px] xl:w-[560px] rounded-xl flex flex-col justify-center items-center px-4 pl-6 pr-3 relative">
       <div className="absolute bottom-0 right-0 p-4">
         <BookOpenIcon className="text-[#F7AB0A] h-5 w-5 sm:h-9 sm:w-9 animate-pulse" />
       </div>
@@ -112,7 +112,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
               <img
                 src={isHovered ? project.gif : project.image}
                 alt=""
-                className="h-[210px] w-[310px] sm:h-[260px] sm:w-[460px] md:h-[340px] md:w-[600px] lgxl:h-[300px] lgxl:w-[510px] xl:h-[330px] xl:w-[560px] shadow-2xl rounded-xl"
+                className="h-[210px] w-[320px] sm:h-[260px] sm:w-[460px] md:h-[340px] md:w-[600px] lgxl:h-[300px] lgxl:w-[510px] xl:h-[330px] xl:w-[560px] shadow-2xl rounded-xl"
               />
             </motion.div>
 

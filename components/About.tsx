@@ -15,7 +15,7 @@ const About = () => {
           transition={{ duration: 1.5 }}
           className="flex flex-col text-center md:text-left md:flex-row max-w-7xl px-6 sm:px-10 justify-evenly mx-auto items-center"
         >
-          <div className="py-12 px-0 md:px-12">
+          <div className="py-6 sm:py-12 px-0 md:px-12">
             <h4 className="text-xl md:text-3xl font-semibold invisible md:visible text-neutral-900 dark:text-neutral-200">
               Get to know me!
             </h4>
