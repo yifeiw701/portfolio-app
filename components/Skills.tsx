@@ -26,7 +26,7 @@ const Skills = () => {
   return (
     <section id="skills">
       <div className="px-4">
-        <h1 className="font-bold text-4xl sm:text-5xl lg:text-[86px] md:text-6xl w-full text-center text-gray-500 dark:text-neutral-200 mt-32 md:mt-64">
+        <h1 className="text-center uppercase tracking-[20px] text-gray-600 dark:text-gray-300 text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-32 md:mt-64">
           Skills
         </h1>
 
