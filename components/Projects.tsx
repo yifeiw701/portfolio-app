@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import { motion } from "framer-motion";
@@ -38,6 +37,15 @@ const Card: React.FC<CardProps> = ({ name, description, github, link }) => {
     </div>
   );
 };
+
+interface Project {
+  name: string;
+  description: string;
+  image: string;
+  gif: string;
+  github: string;
+  link: string;
+}
 
 const projects = [
   {
@@ -78,6 +86,60 @@ const projects = [
   },
 ];
 
+const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isImageOnTop, setIsImageOnTop] = useState(true);
+
+  const toggleLayer = () => setIsImageOnTop(!isImageOnTop);
+
+  return (
+    <div className="relative group">
+      <div className="flex flex-col justify-center items-center">
+        <div className="text-xl sm:text-3xl font-bold mb-4 sm:mb-6 text-neutral-900 dark:text-neutral-200">
+          {project.name}
+        </div>
+        <div className="flex justify-center items-center w-full mb-12">
+          <div className="flex justify-center items-center relative">
+            <motion.div
+              onMouseOver={() => setIsHovered(true)}
+              onMouseOut={() => setIsHovered(false)}
+              className={`relative ${isImageOnTop ? "z-20" : "z-10"}`}
+              onClick={() => !isImageOnTop && toggleLayer()}
+              initial={{ scale: 1 }}
+              animate={{ scale: isHovered ? 1.1 : 1 }}
+              transition={{ duration: 0.7, ease: "easeInOut" }}
+            >
+              <img
+                src={isHovered ? project.gif : project.image}
+                alt=""
+                className="h-[200px] w-[300px] sm:h-[260px] sm:w-[460px] md:h-[340px] md:w-[600px] lgxl:h-[300px] lgxl:w-[510px] xl:h-[330px] xl:w-[560px] shadow-2xl rounded-xl"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0.7 }}
+              animate={{ opacity: isImageOnTop ? 0.7 : 1 }}
+              transition={{ duration: 0.6 }}
+              whileHover={{ scale: 1.05 }}
+              className={`absolute -bottom-8 -right-3 sm:-bottom-14 sm:-right-10 lgxl:-bottom-12 lgxl:-right-6 ${
+                isImageOnTop ? "z-10" : "z-20"
+              }`}
+              onClick={toggleLayer}
+            >
+              <Card
+                name={project.name}
+                description={project.description}
+                github={project.github}
+                link={project.link}
+              />
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const ProjectsSection = () => {
   return (
     <section id="projects">
@@ -85,61 +147,10 @@ const ProjectsSection = () => {
         Projects
       </h1>
 
-      <div className="grid grid-cols-1 w-full lgxl:grid-cols-2 gap-x-4 gap-y-20">
-        {projects.map((project, idx) => {
-          const [isHovered, setIsHovered] = useState(false);
-
-          const [isImageOnTop, setIsImageOnTop] = useState(true);
-
-          const toggleLayer = () => setIsImageOnTop(!isImageOnTop);
-
-          return (
-            <div key={idx} className="relative group">
-              <div className="flex flex-col justify-center items-center">
-                <div className="text-xl md:text-3xl font-bold mb-4 sm:mb-6 text-neutral-900 dark:text-neutral-200">
-                  {project.name}
-                </div>
-                <div className="flex justify-center items-center w-full mb-12">
-                  <div className="flex justify-center items-center relative">
-                    <motion.div
-                      onMouseOver={() => setIsHovered(true)}
-                      onMouseOut={() => setIsHovered(false)}
-                      className={`relative ${isImageOnTop ? "z-20" : "z-10"}`}
-                      onClick={() => !isImageOnTop && toggleLayer()}
-                      initial={{ scale: 1 }}
-                      animate={{ scale: isHovered ? 1.1 : 1 }}
-                      transition={{ duration: 0.7, ease: "easeInOut" }}
-                    >
-                      <img
-                        src={isHovered ? project.gif : project.image}
-                        alt=""
-                        className="h-[200px] w-[300px] sm:h-[260px] sm:w-[460px] md:h-[340px] md:w-[600px] lgxl:h-[300px] lgxl:w-[510px] xl:h-[330px] xl:w-[560px] shadow-2xl rounded-xl"
-                      />
-                    </motion.div>
-
-                    <motion.div
-                      initial={{ opacity: 0.7 }}
-                      animate={{ opacity: isImageOnTop ? 0.7 : 1 }}
-                      transition={{ duration: 0.6 }}
-                      whileHover={{ scale: 1.05 }}
-                      className={`absolute -bottom-8 -right-3 sm:-bottom-14 sm:-right-10 lgxl:-bottom-12 lgxl:-right-6 ${
-                        isImageOnTop ? "z-10" : "z-20"
-                      }`}
-                      onClick={toggleLayer}
-                    >
-                      <Card
-                        name={project.name}
-                        description={project.description}
-                        github={project.github}
-                        link={project.link}
-                      />
-                    </motion.div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+      <div className="grid grid-cols-1 w-full lgxl:grid-cols-2 gap-x-4 gap-y-16 sm:gap-y-24">
+        {projects.map((project, idx) => (
+          <ProjectCard key={idx} project={project} />
+        ))}
       </div>
     </section>
   );
