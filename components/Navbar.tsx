@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-scroll/modules";
@@ -138,7 +138,7 @@ const Navbar = () => {
                   onClick={() => setTheme("dark")}
                   className="bg-slate-200 p-2 rounded-xl"
                 >
-                  <RiMoonFill size={25} />
+                  <RiMoonFill size={25} color="black" />
                 </button>
               )}
             </div>

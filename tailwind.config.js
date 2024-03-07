@@ -15,6 +15,8 @@ module.exports = {
         sm: "480px",
         md: "768px",
         lg: "1024px",
+        lgxl: "1200px",
+        lgxl2: "1260px",
         xl: "1440pd",
       },
       animation: {
