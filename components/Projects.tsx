@@ -147,7 +147,7 @@ const ProjectsSection = () => {
         Projects
       </h1>
 
-      <div className="grid grid-cols-1 w-full lgxl:grid-cols-2 gap-x-4 gap-y-16 sm:gap-y-24">
+      <div className="grid grid-cols-1 w-full lgxl:grid-cols-2 gap-x-4 gap-y-16 sm:gap-y-28">
         {projects.map((project, idx) => (
           <ProjectCard key={idx} project={project} />
         ))}
